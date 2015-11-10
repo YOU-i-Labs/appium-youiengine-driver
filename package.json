@@ -9,7 +9,11 @@
     "name": "youi.tv"
   },
   "license": "Apache-2.0",
-  "engines": [
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOU-i-Labs/appium-youi-driver.git"
+   },
+   "engines": [
     "node"
   ],
   "main": "./build/index.js",
