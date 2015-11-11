@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.0.1",
+  "version": "1.0.4",
   "author": {
     "name": "youi.tv"
   },
@@ -12,8 +12,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YOU-i-Labs/appium-youi-driver.git"
-   },
-   "engines": [
+  },
+  "engines": [
     "node"
   ],
   "main": "./build/index.js",
@@ -57,8 +57,12 @@
     "sinon": "^1.17.1"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "appium-youi-driver@1.0.1",
-  "_shasum": "540d2156e576d66741cf99fe7d2412d26c09a2c6",
+  "_id": "appium-youi-driver@1.0.3",
+  "_shasum": "cffcf11dad432a399c5fba6a22da2909e85091f3",
   "_from": "node_modules/appium-youi-driver",
-  "_resolved": "file:node_modules/appium-youi-driver"
+  "_resolved": "file:node_modules/appium-youi-driver",
+  "bugs": {
+    "url": "https://github.com/YOU-i-Labs/appium-youi-driver/issues"
+  },
+  "homepage": "https://github.com/YOU-i-Labs/appium-youi-driver#readme"
 }
