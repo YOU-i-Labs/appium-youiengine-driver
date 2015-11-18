@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.0.4",
+  "version": "1.0.6",
   "author": {
     "name": "youi.tv"
   },
@@ -57,8 +57,8 @@
     "sinon": "^1.17.1"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "appium-youi-driver@1.0.3",
-  "_shasum": "cffcf11dad432a399c5fba6a22da2909e85091f3",
+  "_id": "appium-youi-driver@1.0.5",
+  "_shasum": "e88ece6a8538e448f62f20b981447d2ce006a761",
   "_from": "node_modules/appium-youi-driver",
   "_resolved": "file:node_modules/appium-youi-driver",
   "bugs": {
