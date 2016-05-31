@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.0.13",
+  "version": "1.0.14",
   "author": {
     "name": "youi.tv"
   },
@@ -58,7 +58,7 @@
     "sinon": "^1.17.3"
   },
   "readme": "https://github.com/YOU-i-Labs/appium-youi-driver#readme",
-  "_id": "appium-youi-driver@1.0.13",
+  "_id": "appium-youi-driver@1.0.14",
   "_shasum": "e88ece6a8538e448f62f20b981447d2ce006a761",
   "_from": "node_modules/appium-youi-driver",
   "_resolved": "file:node_modules/appium-youi-driver",
