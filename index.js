@@ -1,4 +1,3 @@
-import { YouiDriver } from './lib/driver';
+import { YouiEngineDriver } from './lib/driver';
 
-export { YouiDriver };
-
+export { YouiEngineDriver };
