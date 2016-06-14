@@ -1,17 +1,15 @@
 {
-  "name": "appium-youi-driver",
-  "description": "Appium youi application driver",
+  "name": "appium-youiengine-driver",
+  "description": "Appium You.i Engine application driver",
   "keywords": [
     "appium"
   ],
-  "version": "1.0.15",
-  "author": {
-    "name": "youi.tv"
-  },
+  "version": "1.0.0",
+  "author": "youi.tv",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOU-i-Labs/appium-youi-driver.git"
+    "url": "git+https://github.com/YOU-i-Labs/appium-youiengine-driver.git"
   },
   "engines": [
     "node"
@@ -22,48 +20,21 @@
     "lib": "lib"
   },
   "dependencies": {
-    "adm-zip": "^0.4.7",
-    "appium-base-driver": "^1.3.0",
-    "appium-express": "^1.2.1",
+    "appium-android-driver": "1.10.8",
+    "appium-base-driver": "^2.0.3",
     "appium-gulp-plugins": "^1.3.12",
-    "appium-ios-driver": "^1.8.10",
+    "appium-ios-driver": "^1.12.4",
     "appium-logger": "^2.1.0",
-    "appium-support": "^2.0.10",
+    "appium-support": "^2.3.0",
     "asyncbox": "^2.3.1",
     "babel-runtime": "=5.8.24",
     "bluebird": "^2.10.2",
-    "gulp": "^3.9.1",
-    "js2xmlparser2": "^0.2.0",
-    "lodash": "^3.10.1",
-    "mobile-json-wire-protocol": "^1.3.2",
-    "request": "^2.69.0",
-    "socket.io-client": "1.4.5",
-    "source-map-support": "^0.4.0",
-    "teen_process": "^1.5.1",
-    "uuid-js": "^0.7.5",
-    "validate.js": "^0.9.0"
+    "lodash": "^4.13.1"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp once",
     "watch": "gulp"
   },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.2.0",
-    "content-disposition": "^0.5.1",
-    "finalhandler": "^0.4.1",
-    "request-promise": "^2.0.1",
-    "serve-static": "^1.10.2",
-    "sinon": "^1.17.3"
-  },
-  "readme": "https://github.com/YOU-i-Labs/appium-youi-driver#readme",
-  "_id": "appium-youi-driver@1.0.15",
-  "_shasum": "e88ece6a8538e448f62f20b981447d2ce006a761",
-  "_from": "node_modules/appium-youi-driver",
-  "_resolved": "file:node_modules/appium-youi-driver",
-  "bugs": {
-    "url": "https://github.com/YOU-i-Labs/appium-youi-driver/issues"
-  },
-  "homepage": "https://github.com/YOU-i-Labs/appium-youi-driver#readme"
+  "devDependencies": {}
 }
