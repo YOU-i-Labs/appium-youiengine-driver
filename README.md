@@ -64,7 +64,7 @@ console.log(await driver.getPageSource());
 | `getOrientation`                  |
 | `getStrings`                      |
 | `launchApp`                       |
-| `lock`^1^                         |
+| `lock`<sup>1</sup>                |
 | `setOrientation`                  |
 
 | Proxied Command (iOS only) |
@@ -82,4 +82,4 @@ console.log(await driver.getPageSource());
 
 ## API Notes
 
-^1^ `lock` behaves differently in Android than it does in iOS. In Android it does not take any arguments, and locks the screen and returns immediately.
+<sup>1</sup> `lock` behaves differently in Android than it does in iOS. In Android it does not take any arguments, and locks the screen and returns immediately.
