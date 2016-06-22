@@ -50,6 +50,7 @@ console.log(await driver.getPageSource());
 | `getText`                         |
 | `implicitWait`                    |
 | `implicitWaitForCondition`        |
+| `removeApp`                       |
 | `setValue`                        |
 | `startNewCommandTimeout`          |
 | `timeouts`                        |
@@ -63,6 +64,7 @@ console.log(await driver.getPageSource());
 | `getLogTypes`                     |
 | `getOrientation`                  |
 | `getStrings`                      |
+| `isAppInstalled`                  |
 | `launchApp`                       |
 | `lock`<sup>1</sup>                |
 | `setOrientation`                  |
