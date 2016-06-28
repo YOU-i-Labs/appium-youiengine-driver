@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "youi.tv",
   "license": "Apache-2.0",
   "repository": {
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "appium-gulp-plugins": "^1.4.5",
+    "eslint-config-appium": "0.0.6",
     "gulp": "^3.9.1"
   }
 }
