@@ -21,9 +21,9 @@ import { YouiEngineDriver } from `appium-youiengine-driver`
 
 let defaultCaps = {
   app: 'path/to/your.app',
-  platformName: 'YouiEngine',
+  automationName: 'YouiEngine',
+  platformName: 'iOS'
   deviceName: 'iPhone 6'
-  youiEngineAppPlatform: 'iOS'
   youiEngineAppAddress: 'localhost'
 };
 
