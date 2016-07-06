@@ -38,6 +38,7 @@ console.log(await driver.getPageSource());
 ## Commands
 |          Command           |
 |----------------------------|
+| `active`                          |
 | `clearNewCommandTimeout`          |
 | `click`                           |
 | `findElOrEls`                     |
