@@ -39,6 +39,7 @@ console.log(await driver.getPageSource());
 |          Command           |
 |----------------------------|
 | `clearNewCommandTimeout`          |
+| `clear`          |
 | `click`                           |
 | `findElOrEls`                     |
 | `getAttribute`                    |
