@@ -50,6 +50,9 @@ console.log(await driver.getPageSource());
 | `getText`                         |
 | `implicitWait`                    |
 | `implicitWaitForCondition`        |
+| `isSelected`        |
+| `isEnabled`        |
+| `isDisplayed`        |
 | `removeApp`                       |
 | `setValue`                        |
 | `startNewCommandTimeout`          |
