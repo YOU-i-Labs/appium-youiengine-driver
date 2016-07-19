@@ -51,9 +51,9 @@ console.log(await driver.getPageSource());
 | `getText`                         |
 | `implicitWait`                    |
 | `implicitWaitForCondition`        |
-| `isSelected`        |
-| `isEnabled`        |
-| `isDisplayed`        |
+| `isSelected`                      |
+| `isEnabled`                       |
+| `isDisplayed`                     |
 | `removeApp`                       |
 | `setValue`                        |
 | `startNewCommandTimeout`          |
@@ -73,18 +73,16 @@ console.log(await driver.getPageSource());
 | `lock`<sup>1</sup>                |
 | `setOrientation`                  |
 
-| Proxied Command (iOS only) |
+| Proxied Command (Android only)    |
 |----------------------------|
-| `mobileShake`                     |
-
-| Proxied Command (Android only) |
-|----------------------------|
-| `unlock`                          |
+| `getNetworkConnection`            |
+| `isAppInstalled`                  |
 | `isLocked`                        |
-| `toggleData`                      |
-| `toggleFlightMode`                |
+| `longPressKeyCode`                |
+| `pressKeyCode`                    |
+| `setNetworkConnection`            |
 | `toggleLocationServices`          |
-| `toggleWiFi`                      |
+| `unlock`                          |
 
 ## API Notes
 
