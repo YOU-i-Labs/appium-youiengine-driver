@@ -79,15 +79,16 @@ console.log(await driver.getPageSource());
 
 | Proxied Command (Android only)    |
 |----------------------------|
-| `getNetworkConnection`            |
+| `getNetworkConnection`<sup>2</sup>|
 | `isAppInstalled`                  |
 | `isLocked`                        |
 | `longPressKeyCode`                |
 | `pressKeyCode`                    |
-| `setNetworkConnection`            |
+| `setNetworkConnection`<sup>2</sup>|
 | `toggleLocationServices`          |
 | `unlock`                          |
 
 ## API Notes
 
 <sup>1</sup> `lock` behaves differently in Android than it does in iOS. In Android it does not take any arguments, and locks the screen and returns immediately.
+<sup>2</sup> `toggleWiFi`, `toggleData`, `toggleFlightMode` can be achieved via `getNetworkConnection` and `setNetworkConnection` 
