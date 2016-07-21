@@ -89,6 +89,13 @@ console.log(await driver.getPageSource());
 | `unlock`                          |
 
 ## API Notes
-
 <sup>1</sup> `lock` behaves differently in Android than it does in iOS. In Android it does not take any arguments, and locks the screen and returns immediately.
-<sup>2</sup> `toggleWiFi`, `toggleData`, `toggleFlightMode` can be achieved via `getNetworkConnection` and `setNetworkConnection` 
+
+<sup>2</sup> `toggleWiFi`, `toggleData`, `toggleFlightMode` can be achieved via `getNetworkConnection` and `setNetworkConnection`.
+
+## FindBy strategies
+| Supported FindBy strategies    |
+|----------------------------|
+| `name`                         |
+| `id`                           |
+| `class name`                   |
