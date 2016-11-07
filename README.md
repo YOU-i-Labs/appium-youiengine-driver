@@ -68,6 +68,7 @@ console.log(await driver.getPageSource());
 | `getLogTypes`                     |
 | `getOrientation`                  |
 | `getStrings`                      |
+| `getWindowSize`                   |
 | `isAppInstalled`                  |
 | `launchApp`                       |
 | `lock`<sup>1</sup>                |
