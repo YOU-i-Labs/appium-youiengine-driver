@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "youi.tv",
   "license": "Apache-2.0",
   "repository": {
@@ -20,15 +20,15 @@
     "lib": "lib"
   },
   "dependencies": {
-    "appium-android-driver": "1.10.31",
-    "appium-base-driver": "^2.0.23",
-    "appium-ios-driver": "^1.12.31",
-    "appium-support": "^2.5.0",
-    "appium-xcuitest-driver": "^2.0.34",
-    "asyncbox": "^2.3.1",
+    "appium-android-driver": "1.x",
+    "appium-base-driver": "2.x",
+    "appium-ios-driver": "1.x",
+    "appium-support": "2.x",
+    "appium-xcuitest-driver": "2.x",
+    "asyncbox": "2.x",
     "babel-runtime": "=5.8.24",
-    "bluebird": "^2.10.2",
-    "lodash": "^4.16.6"
+    "bluebird": "2.x",
+    "lodash": "4.x"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
@@ -36,18 +36,18 @@
     "watch": "gulp"
   },
   "devDependencies": {
-    "appium-gulp-plugins": "^1.4.5",
-    "appium-test-support": "0.0.5",
-    "babel-eslint": "^6.1.2",
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.3.0",
-    "eslint": "^2.13.1",
-    "eslint-config-appium": "0.0.6",
-    "eslint-plugin-babel": "^3.3.0",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-mocha": "^3.0.0",
-    "gulp": "^3.9.1",
-    "sample-apps": "^2.0.4",
-    "sinon": "^1.17.5"
+    "appium-gulp-plugins": "1.x",
+    "appium-test-support": "0.x",
+    "babel-eslint": "6.x",
+    "chai": "3.x",
+    "chai-as-promised": "5.x",
+    "eslint": "2.x",
+    "eslint-config-appium": "0.x",
+    "eslint-plugin-babel": "3.x",
+    "eslint-plugin-import": "1.x",
+    "eslint-plugin-mocha": "3.x",
+    "gulp": "3.x",
+    "sample-apps": "2.x",
+    "sinon": "1.x"
   }
 }
