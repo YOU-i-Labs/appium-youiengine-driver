@@ -35,6 +35,11 @@ Run commands:
 console.log(await driver.getPageSource());
 
 ```
+## Desired Capabilities
+|Capability|Description|Values|
+|----------|-----------|------|
+|`youiEngineAppAddress`|The IP address of the device on which the app is running. localhost for simulator. Device’s IP address for a real device`|`localhost`, ` <device’s IP address>`|
+
 ## Commands
 |          Command           |
 |----------------------------|
