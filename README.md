@@ -54,6 +54,7 @@ console.log(await driver.getPageSource());
 | `getScreenshot`                   |
 | `getSettings`                     |
 | `getText`                         |
+| `getWindowSize`                   |
 | `implicitWait`                    |
 | `implicitWaitForCondition`        |
 | `isSelected`                      |
@@ -73,7 +74,6 @@ console.log(await driver.getPageSource());
 | `getLogTypes`                     |
 | `getOrientation`                  |
 | `getStrings`                      |
-| `getWindowSize`                   |
 | `isAppInstalled`                  |
 | `launchApp`                       |
 | `lock`<sup>1</sup>                |
