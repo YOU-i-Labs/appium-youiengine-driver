@@ -15,7 +15,7 @@
 | `getSize`                  | 					4.2.5+	 				|
 | `getLocation`              | 					4.2.5+	 				|
 | `getText`                  | 					4.2.7+	 				|
-| `getSettings`              | 					4.4.5+	 				|
+| `getSettings`              | 					4.2.5+	 				|
 | `implicitWait`             | 					4.2.1+	 				|
 | `implicitWaitForCondition` | 					4.2.5+	 				|
 | `isSelected`               | 					4.2.5+	 				|
@@ -28,11 +28,12 @@
 | `startNewCommandTimeout`   | 					4.2.1+	 				|
 | `timeouts`                 | 					4.2.1+	 				|
 | `up`		                 | 					4.2.7+	 				|
-| `updateSettings`           | 					4.4.5+	 				|
+| `updateSettings`           | 					4.2.5+	 				|
 
-|      updateSettings        |          		Value                	|
+The following commands are used with `getSettings` and `updateSettings`
+|      Settings        |Engine Version Support          |          		Value                	| 
 |----------------------------|------------------------------------------|
-| `TimeDialtaion`            | 					2,1,0.5					|
+| `TimeDilation`             | 					4.4.5+				| float (>0)	|
 
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
