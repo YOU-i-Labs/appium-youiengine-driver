@@ -31,9 +31,9 @@
 | `updateSettings`           | 					4.2.5+	 				|
 
 The following commands are used with `getSettings` and `updateSettings`
-|      Settings        |Engine Version Support          |          		Value                	| 
-|----------------------------|------------------------------------------|
-| `TimeDilation`             | 					4.4.5+				| float (>0)	|
+|      Settings              |          Engine Version Support          |          		Value                	| 
+|----------------------------|------------------------------------------|------------------------------------------|
+| `TimeDilation`             | 					4.4.5+		      		| float (>0)	|
 
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
