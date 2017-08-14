@@ -16,6 +16,7 @@
 | `getLocation`              | 					4.2.5+	 				|
 | `getText`                  | 					4.2.7+	 				|
 | `getSettings`              | 					4.2.5+	 				|
+| `getWindowSize`            |          4.4.5+          |
 | `implicitWait`             | 					4.2.1+	 				|
 | `implicitWaitForCondition` | 					4.2.5+	 				|
 | `isSelected`               | 					4.2.5+	 				|
@@ -30,12 +31,6 @@
 | `up`		                 | 					4.2.7+	 				|
 | `updateSettings`           | 					4.2.5+	 				|
 
-The following commands are used with `getSettings` and `updateSettings`
-
-|      Settings              |          Engine Version Support          |          		Value                	 | 
-|----------------------------|------------------------------------------|----------------------------------------|
-| `TimeDilation`             | 					4.4.5+		      		| float (>0)	                         |
-
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
 | `background`                      |
@@ -44,7 +39,6 @@ The following commands are used with `getSettings` and `updateSettings`
 | `getLogTypes`                     |
 | `getOrientation`                  |
 | `getStrings`                      |
-| `getWindowSize`                   |
 | `isAppInstalled`                  |
 | `launchApp`                       |
 | `lock`<sup>1</sup>                |
@@ -65,6 +59,23 @@ The following commands are used with `getSettings` and `updateSettings`
 | `toggleLocationServices`          |
 | `unlock`                          |
 
+
+The following attributes can be queried using `attribute`
+|          Attribute           |          Engine Version Support          |
+|----------------------------|------------------------------------------|
+| `className`                | 					4.6.0+	 				|
+| `compositeOpacity`         | 					4.2.14+	 				|
+| `hasFocus`                 | 					4.6.0+	 				|
+| `id`                       | 					4.6.0+	 				|
+| `isHittable`               | 					4.6.0+	 				|
+| `localOpacity`             | 					4.2.14+	 				|
+| `name`                     | 					4.2.1+	 				|
+
+The following commands are used with `getSettings` and `updateSettings`
+
+|      Settings              |          Engine Version Support          |          		Value                	 | 
+|----------------------------|------------------------------------------|----------------------------------------|
+| `TimeDilation`             | 					4.4.5+		      		| float (>0)	                         |
 
 ### Duplicate Touch Commands - Unsupported
 
