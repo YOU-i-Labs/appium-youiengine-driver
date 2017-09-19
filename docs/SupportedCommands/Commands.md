@@ -64,7 +64,7 @@ The following attributes can be queried using `attribute`
 
 An attributes filter can be added to the supported search strategies (name, class, id) by appending the following format to the strategy value: `[@attributeType='attributeValue']`
 
-Examples: 
+Examples (Ruby): 
 
 `find_element(name: "Title[@text='Big Buck Bunny']")`
 
@@ -74,6 +74,7 @@ Examples:
 |----------------------------|-------------------------------|------------------------------------------|
 | `className`                | 					string	 				     | 					4.5.1+	 				|
 | `compositeOpacity`         | 					float	 				       | 					4.2.14+	 				|
+| `hasOpacity                | 					bool	 				       | 					4.5.1+	 				|
 | `hasFocus`                 | 					bool	 				       | 					4.5.1+	 				|
 | `id`                       | 					string			         | 					4.5.1+	 				|
 | `isDisplayed`              | 					bool	 				       | 					4.5.1+	 				|
@@ -81,13 +82,23 @@ Examples:
 | `localOpacity`             | 					float	 				       | 					4.2.14+	 				|
 | `name`                     | 					string	 				     | 					4.2.1+	 				|
 | `text`                     | 					string	 				     | 					4.5.1+	 				|
+| `visibilityFlag`           | 					bool	 				       | 					4.5.1+	 				|
 
 ### Settings
 The following commands are used with `getSettings` and `updateSettings`
 
+Examples (Ruby): 
+
+`get_settings`
+
+`update_settings TimeDilation: 10`
+
+`update_settings SourceTreeFilter: "[@isDisplayed='true']"`
+
 |      Settings              |          Engine Version Support          |          		Value                	 | 
 |----------------------------|------------------------------------------|----------------------------------------|
 | `TimeDilation`             | 					4.4.5+		      		| float (>0)	                         |
+| `SourceTreeFilter`         | 					4.5.1+		      		| string (format: [@attributeType='attributeValue'])   |
 
 ### Duplicate Touch Commands - Unsupported
 
