@@ -41,7 +41,7 @@
 | `getStrings`                      |
 | `isAppInstalled`                  |
 | `launchApp`                       |
-| `lock`<sup>1</sup>                |
+| `lock`                            |
 | `setOrientation`                  |
 
 | Proxied Command (iOS only) |
@@ -50,27 +50,39 @@
 
 | Proxied Command (Android only)    |
 |-----------------------------------|
-| `getNetworkConnection`<sup>2</sup>|
+| `getNetworkConnection`            |
 | `isAppInstalled`                  |
 | `isLocked`                        |
 | `longPressKeyCode`                |
 | `pressKeyCode`                    |
-| `setNetworkConnection`<sup>2</sup>|
+| `setNetworkConnection`            |
 | `toggleLocationServices`          |
 | `unlock`                          |
 
-
+### Attributes
 The following attributes can be queried using `attribute`
-|          Attribute           |          Engine Version Support          |
-|----------------------------|------------------------------------------|
-| `className`                | 					4.6.0+	 				|
-| `compositeOpacity`         | 					4.2.14+	 				|
-| `hasFocus`                 | 					4.6.0+	 				|
-| `id`                       | 					4.6.0+	 				|
-| `isHittable`               | 					4.6.0+	 				|
-| `localOpacity`             | 					4.2.14+	 				|
-| `name`                     | 					4.2.1+	 				|
 
+An attributes filter can be added to the supported search strategies (name, class, id) by appending the following format to the strategy value: `[@attributeType='attributeValue']`
+
+Examples: 
+
+`find_element(name: "Title[@text='Big Buck Bunny']")`
+
+`find_element(class: "PushButtonView[@isHittable='true']")`
+
+|          Attribute         |          Return Type          |         Engine Version Support          |
+|----------------------------|-------------------------------|------------------------------------------|
+| `className`                | 					string	 				     | 					4.5.1+	 				|
+| `compositeOpacity`         | 					float	 				       | 					4.2.14+	 				|
+| `hasFocus`                 | 					bool	 				       | 					4.5.1+	 				|
+| `id`                       | 					string			         | 					4.5.1+	 				|
+| `isDisplayed`              | 					bool	 				       | 					4.5.1+	 				|
+| `isHittable`               | 					bool	 				       | 					4.5.1+	 				|
+| `localOpacity`             | 					float	 				       | 					4.2.14+	 				|
+| `name`                     | 					string	 				     | 					4.2.1+	 				|
+| `text`                     | 					string	 				     | 					4.5.1+	 				|
+
+### Settings
 The following commands are used with `getSettings` and `updateSettings`
 
 |      Settings              |          Engine Version Support          |          		Value                	 | 
