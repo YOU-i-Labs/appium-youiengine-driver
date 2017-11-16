@@ -74,7 +74,7 @@ Examples (Ruby):
 |----------------------------|-------------------------------|------------------------------------------|
 | `className`                | 					string	 				     | 					4.5.1+	 				|
 | `compositeOpacity`         | 					float	 				       | 					4.2.14+	 				|
-| `hasOpacity                | 					bool	 				       | 					4.5.1+	 				|
+| `hasOpacity`                | 					bool	 				       | 					4.5.1+	 				|
 | `hasFocus`                 | 					bool	 				       | 					4.5.1+	 				|
 | `id`                       | 					string			         | 					4.5.1+	 				|
 | `isDisplayed`              | 					bool	 				       | 					4.5.1+	 				|
