@@ -49,6 +49,26 @@ Below is a sample of the minimum required caps per platform.
 | platformName         | Not Applicable	 			 | iOS                     |
 | youiEngineAppAddress | Not Applicable	 			 | `<device’s IP address>` |
 
+#### MacOS
+
+| Capability           | Simulator                   | Real device             |
+|----------------------|-----------------------------|-------------------------|
+| app                  | Not Applicable	 			 | `<path to the app>`     |
+| automationName       | Not Applicable	 			 | YouiEngine              |
+| deviceName           | Not Applicable	 			 | `<cannot be left blank>`         |
+| platformName         | Not Applicable	 			 | Mac                     |
+| youiEngineAppAddress | Not Applicable	 			 | `localhost` |
+
+#### You.i MacOS (does not use appium-mac-driver)
+
+| Capability           | Simulator                   | Real device             |
+|----------------------|-----------------------------|-------------------------|
+| app                  | Not Applicable	 			 | `<path to the app>`     |
+| automationName       | Not Applicable	 			 | YouiEngine              |
+| deviceName           | Not Applicable	 			 | `<cannot be blank>`         |
+| platformName         | Not Applicable	 			 | YIMac                     |
+| youiEngineAppAddress | Not Applicable	 			 | `localhost` |
+
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
 * xcodeOrgId
@@ -57,11 +77,6 @@ Notes:
 ## Commands
 
 List of supported commands could be found in the [docs](./docs/SupportedCommands) section
-
-## API Notes
-<sup>1</sup> `lock` behaves differently in Android than it does in iOS. In Android it does not take any arguments, and locks the screen and returns immediately.
-
-<sup>2</sup> `toggleWiFi`, `toggleData`, `toggleFlightMode` can be achieved via `getNetworkConnection` and `setNetworkConnection`.
 
 ## FindBy strategies
 FindBy strategies could be found in the [docs](./docs/README.md) section
