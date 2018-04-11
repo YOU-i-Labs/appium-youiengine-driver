@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.0.14",
+  "version": "1.0.15",
   "author": "youi.tv",
   "license": "Apache-2.0",
   "repository": {
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "appium-android-driver": "2.x",
-    "appium-base-driver": "2.x",
-    "appium-ios-driver": "1.x",
+    "appium-base-driver": "^2.20.2",
+    "appium-ios-driver": "2.x",
     "appium-mac-driver": "1.x",
     "appium-support": "2.x",
     "appium-xcuitest-driver": "2.x",
@@ -38,16 +38,16 @@
     "watch": "gulp"
   },
   "devDependencies": {
-    "appium-gulp-plugins": "1.x",
+    "appium-gulp-plugins": "2.x",
     "appium-test-support": "0.x",
-    "babel-eslint": "6.x",
+    "babel-eslint": "7.x",
     "chai": "3.x",
     "chai-as-promised": "5.x",
-    "eslint": "2.x",
-    "eslint-config-appium": "0.x",
+    "eslint": "3.x",
+    "eslint-config-appium": "2.x",
     "eslint-plugin-babel": "3.x",
-    "eslint-plugin-import": "1.x",
-    "eslint-plugin-mocha": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-mocha": "4.x",
     "eslint-plugin-promise": "3.x",
     "gulp": "3.x",
     "sample-apps": "2.x",
