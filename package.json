@@ -20,15 +20,17 @@
     "lib": "lib"
   },
   "dependencies": {
-    "appium-android-driver": "1.x",
+    "appium-android-driver": "2.x",
     "appium-base-driver": "2.x",
     "appium-ios-driver": "1.x",
+    "appium-mac-driver": "1.x",
     "appium-support": "2.x",
     "appium-xcuitest-driver": "2.x",
     "asyncbox": "2.x",
     "babel-runtime": "=5.8.24",
     "bluebird": "2.x",
-    "lodash": "4.x"
+    "lodash": "4.x",
+    "shelljs": "0.8.x"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
