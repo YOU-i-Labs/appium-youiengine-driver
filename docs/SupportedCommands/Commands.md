@@ -2,6 +2,7 @@
 
 |          Command           |          Engine Version Support          |
 |----------------------------|------------------------------------------|
+| `back`                     | 					5.0+	 				|
 | `clearNewCommandTimeout`   | 					4.2.5+	 				|
 | `clear`          			 | 					4.2.5+	 				|
 | `click`                    | 					4.2.1+	 				|
@@ -62,7 +63,7 @@
 ### Attributes
 The following attributes can be queried using `attribute`
 
-An attributes filter can be added to the supported search strategies (name, class, id) by appending the following format to the strategy value: `[@attributeType='attributeValue']`
+An attributes filter can be added to the supported search strategies (name, class, id, accessibility id) by appending the following format to the strategy value: `[@attributeType='attributeValue']`
 
 Examples (Ruby): 
 
@@ -77,11 +78,13 @@ Examples (Ruby):
 | `hasOpacity`                | 					bool	 				       | 					4.5.1+	 				|
 | `hasFocus`                 | 					bool	 				       | 					4.5.1+	 				|
 | `id`                       | 					string			         | 					4.5.1+	 				|
+| `isEnabled`              | 					bool	 				       | 					5.0+	 				|
 | `isDisplayed`              | 					bool	 				       | 					4.5.1+	 				|
 | `isFullyDisplayed`               | 					bool	 				       | 					4.5.2+	 				|
 | `isHittable`               | 					bool	 				       | 					4.5.1+	 				|
 | `isHorizontalScrolling`               | 					bool	 				       | 					4.5.2+	 				|
 | `isScrolling`               | 					bool	 				       | 					4.5.2+	 				|
+| `isSelected`               | 					bool	 				       | 					5.0+	 				|
 | `localOpacity`             | 					float	 				       | 					4.2.14+	 				|
 | `name`                     | 					string	 				     | 					4.2.1+	 				|
 | `text`                     | 					string	 				     | 					4.5.1+	 				|
