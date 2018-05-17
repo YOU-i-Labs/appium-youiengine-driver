@@ -30,6 +30,7 @@
     "babel-runtime": "=5.8.24",
     "bluebird": "2.x",
     "lodash": "4.x",
+    "selenium-webdriver": "3.x",
     "shelljs": "0.8.x"
   },
   "scripts": {
