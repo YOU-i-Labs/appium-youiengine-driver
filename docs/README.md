@@ -17,6 +17,7 @@ Java and Ruby based test client scripts and applications can used to automate te
 | `name`                         |
 | `id`                           |
 | `class name`                   |
+| `accessibility id`             |
 
 
 

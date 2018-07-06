@@ -27,10 +27,13 @@
 | `move`	                 | 					4.2.7+	 				|
 | `removeApp`                | 					4.2.1+	 				|
 | `setValue`                 | 					4.2.1+	 				|
+| `setValue (1)`                 | 					5.0.0+	 				|
 | `startNewCommandTimeout`   | 					4.2.1+	 				|
 | `timeouts`                 | 					4.2.1+	 				|
 | `up`		                 | 					4.2.7+	 				|
 | `updateSettings`           | 					4.2.5+	 				|
+
+(1) Calling setValue from root element will trigger a general sendkeys
 
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
