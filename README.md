@@ -30,24 +30,24 @@ Below is a sample of the minimum required caps per platform.
 | Capability           | Simulator                     | Real device             |
 |----------------------|-------------------------------|-------------------------|
 | app                  | `<path to the app>`           | `<path to the app>`     |
-| automationName       | YouiEngine                    | YouiEngine              |
+| automationName       | `YouiEngine`                  | `YouiEngine`            |
 | deviceName           | `<iOS Simulator device name>` | `<device’s name>`       |
-| platformName         | iOS                           | iOS                     |
+| platformName         | `iOS`                         | `iOS`                   |
 | platformVersion      | `<iOS version>`               | `<iOS version>`         |
-| udid                 | Not applicable                | `<device’s udid>`       |
+| udid                 | `Not applicable`              | `<device’s udid>`       |
 | xcodeOrgId           | `<Team ID>`                   | `<Team ID>`             |
-| youiEngineAppAddress | localhost                     | `<device’s IP address>` |
+| youiEngineAppAddress | `localhost`                   | `<device’s IP address>` |
 
 
 #### Android
 
-| Capability           | Simulator                   | Real device             |
-|----------------------|-----------------------------|-------------------------|
-| app                  | N/A	 			 | `<path to the app>`     |
-| automationName       | N/A	 			 | YouiEngine              |
-| deviceName           | N/A	 			 | `<device’s ID>`         |
-| platformName         | N/A	 			 | iOS                     |
-| youiEngineAppAddress | N/A	 			 | `<device’s IP address>` |
+| Capability           | Real device             |
+|----------------------|-------------------------|
+| app                  | `<path to the app>`     |
+| automationName       | `YouiEngine`            |
+| deviceName           | `<device’s ID>`         |
+| platformName         | `iOS`                   |
+| youiEngineAppAddress | `<device’s IP address>` |
 
 #### macOS
 Support added in 5.0+
@@ -55,9 +55,9 @@ Support added in 5.0+
 | Capability           | Real device             |
 |----------------------|-------------------------|
 | app                  | `<path to the app>`     |
-| automationName       | YouiEngine              |
+| automationName       | `YouiEngine`            |
 | deviceName           | `<cannot be left blank>`|
-| platformName         | Mac                     |
+| platformName         | `Mac`                   |
 | youiEngineAppAddress | `localhost` |
 
 #### You.i macOS (does not use appium-mac-driver) 
@@ -66,24 +66,23 @@ Support added in 5.0+
 | Capability           | Real device             |
 |----------------------|-------------------------|
 | app                  | `<path to the app>`     |
-| automationName       | YouiEngine              |
+| automationName       | `YouiEngine`            |
 | deviceName           | `<cannot be blank>`     |
-| platformName         | YIMac                   |
+| platformName         | `YIMac`                 |
 | youiEngineAppAddress | `localhost` |
 
 #### You.i tvOS
 Support added in 5.0+
+<sup>\*</sup> If another app is installed with You.i's socket, it may connect to it. All You.i apps should be deleted before running Appium.
 
 | Capability           | Real device             |
 |----------------------|-------------------------|
 | app                  | `<path to the app>`     |
-| automationName       | YouiEngine              |
-| bundleID<sup>1</sup> | `<bundleID>`            |
+| automationName       | `YouiEngine`            |
 | deviceName           | `<cannot be blank>`     |
-| platformName         | YItvOS                  |
-| youiEngineAppAddress | `localhost`             |
+| platformName         | `YItvOS`                |
+| youiEngineAppAddress | `<device’s IP address>` |
 
-<sup>1</sup> Adding the bundleID will allow the app to be deleted at the end.
 
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
@@ -208,4 +207,4 @@ Examples (Ruby):
 | `id`<sup>1</sup>               |
 | `class name`                   |
 | `accessibility id`             |
-<sup>1</sup> Starting with 5.0, React Native testID will be able to be searched with id.
+<sup>1</sup> Starting with 5.0, `id` selector can be used to search for React Native testID.
