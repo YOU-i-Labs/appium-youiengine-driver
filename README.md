@@ -69,7 +69,10 @@ Support added in 5.0+
 | automationName       | `YouiEngine`            |
 | deviceName           | `<cannot be blank>`     |
 | platformName         | `YIMac`                 |
-| youiEngineAppAddress | `localhost` |
+| showXcodeLog<sup>1</sup> | `true`              |
+| youiEngineAppAddress | `localhost`             |
+
+<sup>1</sup> Optional.
 
 #### You.i tvOS
 Support added in 5.0+
@@ -81,8 +84,23 @@ Support added in 5.0+
 | automationName       | `YouiEngine`            |
 | deviceName           | `<cannot be blank>`     |
 | platformName         | `YItvOS`                |
+| udid<sup>1</sup>     | `<device’s udid>`       |
 | youiEngineAppAddress | `<device’s IP address>` |
 
+<sup>1</sup> Optional. Required if multiple devices are connected to server.
+
+#### You.i Roku
+Support added in 5.0+
+
+| Capability           | Real device             |
+|----------------------|-------------------------|
+| app                  | `<path to the app>`     |
+| automationName       | `YouiEngine`            |
+| deviceName           | `<cannot be blank>`     |
+| password             | `<password to Roku Dev account>`     |
+| platformName         | `YIRoku`                |
+| username             | `<username to Roku Dev account>`    |
+| youiEngineAppAddress | `<device’s IP address>` |
 
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
@@ -127,7 +145,7 @@ Notes:
 
 <sup>3</sup> Starting with 5.0, you can send a general keypress (not targeted at an element), by using sendkeys on the root element
 
-<sup>4</sup> See [Settings](https://github.com/YOU-i-Labs/appium-youiengine-driver#attributes) below
+<sup>4</sup> See [Settings](https://github.com/YOU-i-Labs/appium-youiengine-driver#settings) below
 
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
