@@ -89,19 +89,6 @@ Support added in 5.0+
 
 <sup>1</sup> Optional. Required if multiple devices are connected to server.
 
-#### You.i Roku
-Support added in 5.0+
-
-| Capability           | Real device             |
-|----------------------|-------------------------|
-| app                  | `<path to the app>`     |
-| automationName       | `YouiEngine`            |
-| deviceName           | `<cannot be blank>`     |
-| password             | `<password to Roku Dev account>`     |
-| platformName         | `YIRoku`                |
-| username             | `<username to Roku Dev account>`    |
-| youiEngineAppAddress | `<device’s IP address>` |
-
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
 * xcodeOrgId
