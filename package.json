@@ -30,6 +30,7 @@
     "appium-android-driver": "4.x",
     "appium-base-driver": "^3.x",
     "appium-ios-driver": "2.x",
+    "appium-ios-simulator": "3.x",
     "appium-mac-driver": "1.x",
     "appium-support": "2.x",
     "appium-xcuitest-driver": "2.x",
@@ -49,7 +50,7 @@
   },
   "devDependencies": {
     "ajv": "^6.5.3",
-    "appium-gulp-plugins": "3.x",
+    "appium-gulp-plugins": "^3.2.0",
     "babel-eslint": "^10.0.0",
     "chai": "4.x",
     "chai-as-promised": "7.x",
@@ -58,7 +59,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-mocha": "^5.0.0",
     "eslint-plugin-promise": "^4.0.0",
-    "gulp": "4.x",
-    "sinon": "6.x"
+    "gulp": "^4.0.0",
+    "sinon": "^6.0.0"
   }
 }
