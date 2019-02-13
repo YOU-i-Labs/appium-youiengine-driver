@@ -34,7 +34,7 @@ Below is a sample of the minimum required caps per platform.
 | deviceName           | `<iOS Simulator device name>` | `<device’s name>`       |
 | platformName         | `iOS`                         | `iOS`                   |
 | platformVersion      | `<iOS version>`               | `<iOS version>`         |
-| udid                 | `Not applicable`              | `<device’s udid>`       |
+| udid                 | `<device’s udid>`             | `<device’s udid>`       |
 | xcodeOrgId           | `<Team ID>`                   | `<Team ID>`             |
 | youiEngineAppAddress | `localhost`                   | `<device’s IP address>` |
 
@@ -84,10 +84,21 @@ Support added in 5.0+
 | automationName       | `YouiEngine`            |
 | deviceName           | `<cannot be blank>`     |
 | platformName         | `YItvOS`                |
-| udid<sup>1</sup>     | `<device’s udid>`       |
+| udid                 | `<device’s udid>`       |
 | youiEngineAppAddress | `<device’s IP address>` |
 
-<sup>1</sup> Optional. Required if multiple devices are connected to server.
+
+#### BlueSky
+Support added in 5.0+
+| Capability           | Real device             |
+|----------------------|-------------------------|
+| app                  | `<path to the app>`     |
+| automationName       | `YouiEngine`            |
+| deviceName           | `<cannot be blank>`     |
+| password             | `<dev account password>`|
+| platformName         | `BlueSky`               |
+| username             | `<dev account username>`|
+| youiEngineAppAddress | `<device’s IP address>` |
 
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
