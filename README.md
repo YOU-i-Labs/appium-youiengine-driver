@@ -46,7 +46,7 @@ Below is a sample of the minimum required caps per platform.
 | app                  | `<path to the app>`     |
 | automationName       | `YouiEngine`            |
 | deviceName           | `<device’s ID>`         |
-| platformName         | `iOS`                   |
+| platformName         | `Android`               |
 | youiEngineAppAddress | `<device’s IP address>` |
 
 #### macOS
