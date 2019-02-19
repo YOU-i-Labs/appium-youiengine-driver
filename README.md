@@ -90,6 +90,7 @@ Support added in 5.0+
 
 #### BlueSky
 Support added in 5.0+
+
 | Capability           | Real device             |
 |----------------------|-------------------------|
 | app                  | `<path to the app>`     |
