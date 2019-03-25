@@ -29,7 +29,7 @@
     "@babel/runtime": "^7.0.0",
     "appium-android-driver": "^4.0.0",
     "appium-base-driver": "^3.x",
-    "appium-ios-driver": "2.x",
+    "appium-ios-driver": "^4.2.1",
     "appium-ios-simulator": "3.x",
     "appium-mac-driver": "1.x",
     "appium-support": "2.x",
