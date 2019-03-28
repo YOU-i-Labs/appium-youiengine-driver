@@ -95,11 +95,14 @@ Support added in 5.0+
 |----------------------|-------------------------|
 | app                  | `<path to the app>`     |
 | automationName       | `YouiEngine`            |
+| channelId<sup>1</sup>| <App's channel ID>      |
 | deviceName           | `<cannot be blank>`     |
 | password             | `<dev account password>`|
 | platformName         | `BlueSky`               |
 | username             | `<dev account username>`|
 | youiEngineAppAddress | `<device’s IP address>` |
+
+<sup>1</sup> Optional (default is `dev`)
 
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
