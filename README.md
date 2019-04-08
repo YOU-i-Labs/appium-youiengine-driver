@@ -104,6 +104,20 @@ Support added in 5.0+
 
 <sup>1</sup> Optional (default is `dev`)
 
+#### Connect to App
+To connect to an already launched app.
+Useful for debugging app or testing a platform which currently doesn't have install/launch/close/remove methods.
+
+| Capability           | Real device             |
+|----------------------|-------------------------|
+| app<sup>1</sup>      | `<cannot be blank>`     |
+| automationName       | `YouiEngine`            |
+| deviceName           | `<cannot be blank>`     |
+| platformName         | `ConnectToApp`          |
+| youiEngineAppAddress | `<device’s IP address>` |
+
+<sup>1</sup> Some libraries will look to validate the app path so you may need to add a valid app path even though it will not be installed.
+
 Notes:
 * For iOS 8+, set the following on your device: Settings -> Developer -> Set UI Automation -> true
 * xcodeOrgId
