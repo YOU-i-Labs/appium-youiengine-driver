@@ -140,9 +140,11 @@ Notes:
 | [Get Page Source](http://appium.io/docs/en/commands/session/source/) | 4.2.1+	|
 | [Get Window Size](http://appium.io/docs/en/commands/web/window/get-window-size/) | 4.4.5+ |
 | [Go Back](http://appium.io/docs/en/commands/session/back/) | 5.0+	|
+| [Hide Keyboard](http://appium.io/docs/en/commands/device/keys/hide-keyboard/) | 5.2.0+ |
 | [Is Element Displayed](http://appium.io/docs/en/commands/element/attributes/displayed/) | 4.2.5+ |
 | [Is Element Enabled](http://appium.io/docs/en/commands/element/attributes/enabled/) | 4.2.7+ |
 | [Is Element Selected](http://appium.io/docs/en/commands/element/attributes/selected/) | 4.2.5+ |
+| [Is Keyboard Shown](http://appium.io/docs/en/commands/device/keys/is-keyboard-shown/) | 5.2.0+ |
 | [Long Tap](http://appium.io/docs/en/commands/interactions/touch/long-press/) | 4.2.7+	|
 | [Move](http://appium.io/docs/en/commands/interactions/touch/move/) | 4.2.7+	|
 | [Remove App](http://appium.io/docs/en/commands/device/app/remove-app/) | 4.2.1+	|
