@@ -37,9 +37,11 @@
     "asyncbox": "2.x",
     "bluebird": "3.x",
     "lodash": "4.x",
+    "node-simctl": "^5.0.1",
     "selenium-webdriver": "3.x",
     "shelljs": "0.8.x",
-    "source-map-support": "^0.5.9"
+    "source-map-support": "^0.5.9",
+    "teen_process": "^1.14.1"
   },
   "scripts": {
     "prepare": "gulp prepublish",
