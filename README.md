@@ -19,7 +19,10 @@ Desired capabilities (caps) are a set of keys and values (i.e., a map or hash) s
 
 |Capability|Description|Values|
 |----------|-----------|------|
-|`youiEngineAppAddress`|The IP address of the device on which the app is running. localhost for simulator. Device’s IP address for a real device`|`localhost`, ` <device’s IP address>`|
+|`youiEngineAppAddress`|`The IP address of the device on which the app is running. localhost for simulator. Device’s IP address for a real device`|`localhost`, `<device’s IP address>`|
+|`youiEngineAppPort`|`The socket port used by the app.`|`Default: 12345, Default for PS4: 40123`|
+|`fullSourceTree`|`Sets the source tree to use all elements (not only displayed ones)` |`Default: false`|
+
 
 ### Minimum required capabilities per platform
 
