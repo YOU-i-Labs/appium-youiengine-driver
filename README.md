@@ -44,13 +44,14 @@ Below is a sample of the minimum required caps per platform.
 
 #### Android
 
-| Capability           | Real device             |
-|----------------------|-------------------------|
-| app                  | `<path to the app>`     |
-| automationName       | `YouiEngine`            |
-| deviceName           | `<device’s ID>`         |
-| platformName         | `Android`               |
-| youiEngineAppAddress | `<device’s IP address>` |
+| Capability           | Real device             | Simulator            |
+|----------------------|-------------------------|----------------------|
+| app                  | `<path to the app>`     | `<path to the app>`  |
+| automationName       | `YouiEngine`            | `YouiEngine`         |
+| deviceName           | `<device’s ID>`         | `<device’s ID>`      |
+| platformName         | `Android`               | `Android`            |
+| youiEngineAppAddress | `<device’s IP address>` | `localhost`          |
+| avd                  | `N/A`                   | `<Android Virtual Device Name>` |  
 
 #### macOS
 Support added in 5.0+
@@ -132,9 +133,10 @@ Notes:
 |----------------------------|------------------------------------------|
 | [Clear Element](http://appium.io/docs/en/commands/element/actions/clear/) | 4.2.5+ |
 | [Click](http://appium.io/docs/en/commands/element/actions/click/) | 4.2.1+|
-| [Find Element](http://appium.io/docs/en/commands/element/find-element/)<sup>1</sup> | 	4.2.1+ |
-| [Find Elements](http://appium.io/docs/en/commands/element/find-elements/)<sup>1</sup> | 4.2.1+ |
-| [Get Element Attribute](http://appium.io/docs/en/commands/element/attributes/attribute/)<sup>2</sup> | 4.2.1+ |
+| [Execute Mobile Command](http://appium.io/docs/en/commands/mobile-command/)<sup>1</sup> | 5.5.0+|
+| [Find Element](http://appium.io/docs/en/commands/element/find-element/)<sup>2</sup> | 	4.2.1+ |
+| [Find Elements](http://appium.io/docs/en/commands/element/find-elements/)<sup>2</sup> | 4.2.1+ |
+| [Get Element Attribute](http://appium.io/docs/en/commands/element/attributes/attribute/)<sup>3</sup> | 4.2.1+ |
 | [Get All Contexts](http://appium.io/docs/en/commands/context/get-contexts/) | 4.2.1+ |
 | [Get Current Context](http://appium.io/docs/en/commands/context/get-context/) | 4.2.1+ |
 | [Get Element Location](http://appium.io/docs/en/commands/element/attributes/location/) | 4.2.5+ |
@@ -152,21 +154,23 @@ Notes:
 | [Move](http://appium.io/docs/en/commands/interactions/touch/move/) | 4.2.7+	|
 | [Remove App](http://appium.io/docs/en/commands/device/app/remove-app/) | 4.2.1+	|
 | [Retrieve Device Settings](http://appium.io/docs/en/commands/session/settings/get-settings/) | 4.2.5+ |
-| [Send Keys](http://appium.io/docs/en/commands/element/actions/send-keys/)<sup>3</sup> | 4.2.1+ |
+| [Send Keys](http://appium.io/docs/en/commands/element/actions/send-keys/)<sup>4</sup> | 4.2.1+ |
 | [Set Implicit Wait Timeout](http://appium.io/docs/en/commands/session/timeouts/implicit-wait/) | 4.2.1+ |
 | [Set Timeouts](http://appium.io/docs/en/commands/session/timeouts/timeouts/) | 4.2.1+	|
 | [Take Screenshot](http://appium.io/docs/en/commands/session/screenshot/) | 4.2.1+ |
 | [Touch Down](http://appium.io/docs/en/commands/interactions/touch/touch-down/) | 4.2.7+ |
 | [Touch Up](http://appium.io/docs/en/commands/interactions/touch/touch-up/) | 4.2.7+	|
-| [Settings](http://appium.io/docs/en/advanced-concepts/settings/#settings)<sup>4</sup> | 4.2.5+ |
+| [Settings](http://appium.io/docs/en/advanced-concepts/settings/#settings)<sup>5</sup> | 4.2.5+ |
 
-<sup>1</sup> See [Selector strategies](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
+<sup>1</sup> See [Mobile commands](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
 
-<sup>2</sup> See [Attributes](https://github.com/YOU-i-Labs/appium-youiengine-driver#attributes) below
+<sup>2</sup> See [Selector strategies](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
 
-<sup>3</sup> Starting with 5.0, you can send a general keypress (not targeted at an element), by using sendkeys on the root element
+<sup>3</sup> See [Attributes](https://github.com/YOU-i-Labs/appium-youiengine-driver#attributes) below
 
-<sup>4</sup> See [Settings](https://github.com/YOU-i-Labs/appium-youiengine-driver#settings) below
+<sup>4</sup> Starting with 5.0, you can send a general keypress (not targeted at an element), by using sendkeys on the root element
+
+<sup>5</sup> See [Settings](https://github.com/YOU-i-Labs/appium-youiengine-driver#settings) below
 
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
@@ -192,6 +196,13 @@ Notes:
 | [Press Key Code](http://appium.io/docs/en/commands/device/keys/press-keycode/) |
 | [Toggle Location Services](http://appium.io/docs/en/commands/device/network/toggle-location-services/) |
 | [Unlock](http://appium.io/docs/en/commands/device/interactions/unlock/) |
+
+### Mobile Commands
+
+| Command	                 |   Description                                                             |	Argument       |	Argument Example           |
+|----------------------------|---------------------------------------------------------------------------|-----------------|-------------------------------|
+| mobile:pressButton         |   Press a physical button. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-buttons-string-as-parameter) |	{name}         |	{name: "Gamepad0"}             |
+| mobile:pressKeyCode        |   Press a physical button by passing it's keycode. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-keycodes-code-as-parameter) |	{keycode}         |	{keycode: "220"}             |
 
 ### Attributes
 The following attributes can be queried using `attribute`
