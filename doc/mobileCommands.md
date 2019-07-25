@@ -1,38 +1,9 @@
 You.i Engine Mobile Commands
 ===================
 
-## Supported Buttons (string as parameter)
-|   Value   |   Description     |
-|-----------|-------------------|
-|	Enter	|	Enter key.	|
-|	Escape	|	Escape key.	|
-|	ArrowLeft	|	Left Arrow key.	|
-|	ArrowRight	|	Right Arrow key.	|
-|	ArrowUp	|	Up Arrow key.	|
-|	ArrowDown	|	Down Arrow key.	|
-|	Select	|	Select key.	|
-|	MediaFastForward	|	Key for fast-forwarding through the current media.	|
-|	MediaRewind	|	Key for rewinding through the current media.	|
-|	MediaPlayPause	|	Key that toggles between playing or pausing the current media.	|
-|	SystemHome	|	System Home button.	|
-|	SystemBack	|	Back button.	|
-|	Gamepad0	|	X Button on a Playstation controller, A button on an XBox controller	|
-|	Gamepad1	|	○ Button on a Playstation controller, B button on an XBox controller	|
-|	Gamepad2	|	□ Button on a Playstation controller, X button on an XBox controller	|
-|	Gamepad3	|	△ Button on a Playstation controller, Y button on an XBox controller	|
-|	GamepadLeftBumper	|	The left bumper on a controller (i.e LB on a PS4 controller)	|
-|	GamepadRightBumper	|	The right bumper on a controller (i.e RB on a PS4 controller)	|
-|	GamepadLeftTrigger	|	The left trigger on a controller (i.e LT on a PS4 controller)	|
-|	GamepadRightTrigger	|	The right trigger on a controller (i.e RT on a PS4 controller)	|
-|	GamepadLeftStick	|	The left analog button on a controller (i.e. L3 on a PS4 controller)	|
-|	GamepadRightStick	|	The right analog button on a controller (i.e. R3 on a PS4 controller)	|
-|	GamepadSelect	|	The select button on a controller	|
-|	GamepadStart	|	The start button on a controller	|
+## Supported Buttons
 
-
-## Supported KeyCodes (code as parameter)
-
-|   Name    |   Value   |   Description     |
+|   Name    |   Keycode   |   Description     |
 |-----------|-----------|-------------------|
 |	Unidentified	|	0	|	  Key code for unidentified keys.  	|
 |	Attention	|	1	|	  Secure attention key.  	|

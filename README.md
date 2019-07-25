@@ -201,8 +201,7 @@ Notes:
 
 | Command	                 |   Description                                                             |	Argument       |	Argument Example           |
 |----------------------------|---------------------------------------------------------------------------|-----------------|-------------------------------|
-| mobile:pressButton         |   Press a physical button. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-buttons-string-as-parameter) |	{name}         |	{name: "Gamepad0"}             |
-| mobile:pressKeyCode        |   Press a physical button by passing it's keycode. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-keycodes-code-as-parameter) |	{keycode}         |	{keycode: "220"}             |
+| mobile:pressButton         |   Press a physical button. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-buttons) |	{name}         |	{name: "Gamepad0"}             |
 
 ### Attributes
 The following attributes can be queried using `attribute`
