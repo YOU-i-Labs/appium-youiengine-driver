@@ -155,12 +155,14 @@ Notes:
 | [Remove App](http://appium.io/docs/en/commands/device/app/remove-app/) | 4.2.1+	|
 | [Retrieve Device Settings](http://appium.io/docs/en/commands/session/settings/get-settings/) | 4.2.5+ |
 | [Send Keys](http://appium.io/docs/en/commands/element/actions/send-keys/)<sup>4</sup> | 4.2.1+ |
+| [Settings](http://appium.io/docs/en/advanced-concepts/settings/#settings)<sup>5</sup> | 4.2.5+ |
 | [Set Implicit Wait Timeout](http://appium.io/docs/en/commands/session/timeouts/implicit-wait/) | 4.2.1+ |
 | [Set Timeouts](http://appium.io/docs/en/commands/session/timeouts/timeouts/) | 4.2.1+	|
 | [Take Screenshot](http://appium.io/docs/en/commands/session/screenshot/) | 4.2.1+ |
 | [Touch Down](http://appium.io/docs/en/commands/interactions/touch/touch-down/) | 4.2.7+ |
 | [Touch Up](http://appium.io/docs/en/commands/interactions/touch/touch-up/) | 4.2.7+	|
-| [Settings](http://appium.io/docs/en/advanced-concepts/settings/#settings)<sup>5</sup> | 4.2.5+ |
+| [Update Device Settings](http://appium.io/docs/en/commands/session/settings/update-settings/) | 4.4.5+	|
+
 
 <sup>1</sup> See [Mobile commands](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
 
@@ -203,6 +205,8 @@ Notes:
 |----------------------------|---------------------------------------------------------------------------|-----------------|-------------------------------|
 | mobile:pressButton         |   Press a physical button. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-buttons) |	{name}         |	{name: "Gamepad0"}             |
 
+[Mobile Commands Example](http://appium.io/docs/en/commands/mobile-command/)
+
 ### Attributes
 The following attributes can be queried using `attribute`
 
@@ -243,6 +247,11 @@ Examples (Ruby):
 `update_settings TimeDilation: 10`
 
 `update_settings SourceTreeFilter: "[@isDisplayed='true']"`
+
+[Retrieve Settings Example](http://appium.io/docs/en/commands/session/settings/get-settings/)
+
+[Update Settings Example](http://appium.io/docs/en/commands/session/settings/update-settings/)
+
 
 |      Settings              |          Engine Version Support          |          		Value                	 | 
 |----------------------------|------------------------------------------|----------------------------------------|
