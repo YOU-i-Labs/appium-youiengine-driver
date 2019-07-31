@@ -4,7 +4,7 @@
   "keywords": [
     "appium"
   ],
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "youi.tv",
   "license": "Apache-2.0",
   "repository": {
@@ -29,19 +29,19 @@
     "@babel/runtime": "^7.0.0",
     "appium-android-driver": "^4.0.0",
     "appium-base-driver": "^3.x",
-    "appium-ios-driver": "^4.2.1",
+    "appium-ios-driver": "^4.3.0",
     "appium-ios-simulator": "3.x",
     "appium-mac-driver": "1.x",
     "appium-support": "2.x",
-    "appium-xcuitest-driver": "2.x",
+    "appium-xcuitest-driver": "^2.116.3",
     "asyncbox": "2.x",
     "bluebird": "3.x",
-    "lodash": "4.x",
-    "node-simctl": "^5.0.1",
+    "lodash": "^4.17.11",
+    "node-simctl": "^5.0.2",
     "selenium-webdriver": "3.x",
     "shelljs": "0.8.x",
-    "source-map-support": "^0.5.9",
-    "teen_process": "^1.14.1"
+    "source-map-support": "^0.5.12",
+    "teen_process": "^1.15.0"
   },
   "scripts": {
     "prepare": "gulp prepublish",
@@ -51,17 +51,17 @@
     "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
   },
   "devDependencies": {
-    "ajv": "^6.5.3",
-    "appium-gulp-plugins": "^3.2.0",
-    "babel-eslint": "^10.0.0",
+    "ajv": "^6.10.2",
+    "appium-gulp-plugins": "^4.1.0",
+    "babel-eslint": "^10.0.2",
     "chai": "4.x",
     "chai-as-promised": "7.x",
-    "eslint": "^5.2.0",
-    "eslint-config-appium": "3.x",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-mocha": "^5.0.0",
-    "eslint-plugin-promise": "^4.0.0",
-    "gulp": "^4.0.0",
-    "sinon": "^6.0.0"
+    "eslint": "^6.1.0",
+    "eslint-config-appium": "^4.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "gulp": "^4.0.2",
+    "sinon": "^7.2.3"
   }
 }
