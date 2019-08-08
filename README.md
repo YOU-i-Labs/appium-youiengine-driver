@@ -44,14 +44,17 @@ Below is a sample of the minimum required caps per platform.
 
 #### Android
 
-| Capability           | Real device             | Simulator            |
+| Capability           | Real device             | Emulator             |
 |----------------------|-------------------------|----------------------|
 | app                  | `<path to the app>`     | `<path to the app>`  |
 | automationName       | `YouiEngine`            | `YouiEngine`         |
 | deviceName           | `<device’s ID>`         | `<device’s ID>`      |
 | platformName         | `Android`               | `Android`            |
-| youiEngineAppAddress | `<device’s IP address>` | `localhost`          |
+| youiEngineAppAddress<sup>1</sup> | `<device’s IP address>` | `localhost`          |
 | avd                  | `N/A`                   | `<Android Virtual Device Name>` |  
+
+<sup>1</sup> For emulator, Port forwarding is required to forward the port from the host machine to the emulated device. Use the following command: `adb forward tcp:12345 tcp:12345`
+
 
 #### macOS
 Support added in 5.0+
