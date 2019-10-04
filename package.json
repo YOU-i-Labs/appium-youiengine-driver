@@ -33,7 +33,7 @@
     "appium-ios-simulator": "3.x",
     "appium-mac-driver": "1.x",
     "appium-support": "2.x",
-    "appium-xcuitest-driver": "^2.116.3",
+    "appium-xcuitest-driver": "^3.0.0",
     "asyncbox": "2.x",
     "bluebird": "3.x",
     "lodash": "^4.17.11",
