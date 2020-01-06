@@ -3,6 +3,22 @@ You.i Engine Mobile Commands
 
 ## Supported Buttons
 
+### tvOS
+|    Name    |    Description    |
+|    -----------    |    -------------------    |
+|    ArrowLeft    |    Navigates Left.    |
+|    ArrowRight    |    Navigates Right.    |
+|    ArrowUp    |    Navigates Up.    |
+|    ArrowDown    |    Navigates Down.    |
+|    Enter    |    Selects focused item.    |
+|    MediaPlayPause    |    Toggles between playing or pausing the current media.    |
+|    Escape    |    Navigates back (Menu).    |
+
+**Limitations**
+
+Gesture commands do not work for tvOS. Some commands such as pasteboard do not work as well.
+
+### Full list
 |	Name	|	Description	|
 |	-----------	|	-------------------	|
 |	Unidentified	|	Key code for unidentified keys.	|
