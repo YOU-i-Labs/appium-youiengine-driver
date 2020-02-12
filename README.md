@@ -151,14 +151,14 @@ Notes:
 | [Hide Keyboard](http://appium.io/docs/en/commands/device/keys/hide-keyboard/) | 5.2.0+ |
 | [Is Element Displayed](http://appium.io/docs/en/commands/element/attributes/displayed/) | 4.2.5+ |
 | [Is Element Enabled](http://appium.io/docs/en/commands/element/attributes/enabled/) | 4.2.7+ |
-| [Is Element Selected](http://appium.io/docs/en/commands/element/attributes/selected/) | 4.2.5+ |
+| [Is Element Selected](http://appium.io/docs/en/commands/element/attributes/selected/)<sup>4</sup> | 4.2.5+ (5.12+ for React Native projects) |
 | [Is Keyboard Shown](http://appium.io/docs/en/commands/device/keys/is-keyboard-shown/) | 5.2.0+ |
 | [Long Tap](http://appium.io/docs/en/commands/interactions/touch/long-press/) | 4.2.7+	|
 | [Move](http://appium.io/docs/en/commands/interactions/touch/move/) | 4.2.7+	|
 | [Remove App](http://appium.io/docs/en/commands/device/app/remove-app/) | 4.2.1+	|
 | [Retrieve Device Settings](http://appium.io/docs/en/commands/session/settings/get-settings/) | 4.2.5+ |
-| [Send Keys](http://appium.io/docs/en/commands/element/actions/send-keys/)<sup>4</sup> | 4.2.1+ |
-| [Settings](http://appium.io/docs/en/advanced-concepts/settings/#settings)<sup>5</sup> | 4.2.5+ |
+| [Send Keys](http://appium.io/docs/en/commands/element/actions/send-keys/)<sup>5</sup> | 4.2.1+ |
+| [Settings](http://appium.io/docs/en/advanced-concepts/settings/#settings)<sup>6</sup> | 4.2.5+ |
 | [Set Implicit Wait Timeout](http://appium.io/docs/en/commands/session/timeouts/implicit-wait/) | 4.2.1+ |
 | [Set Timeouts](http://appium.io/docs/en/commands/session/timeouts/timeouts/) | 4.2.1+	|
 | [Take Screenshot](http://appium.io/docs/en/commands/session/screenshot/) | 4.2.1+ |
@@ -173,9 +173,11 @@ Notes:
 
 <sup>3</sup> See [Attributes](https://github.com/YOU-i-Labs/appium-youiengine-driver#attributes) below
 
-<sup>4</sup> Starting with 5.0, you can send a general keypress (not targeted at an element), by using sendkeys on the root element
+<sup>4</sup> Only works for toggle buttons (C++) and elements that have the Selected AccessibilityState property enabled (React Native)
 
-<sup>5</sup> See [Settings](https://github.com/YOU-i-Labs/appium-youiengine-driver#settings) below
+<sup>5</sup> Starting with 5.0, you can send a general keypress (not targeted at an element), by using sendkeys on the root element
+
+<sup>6</sup> See [Settings](https://github.com/YOU-i-Labs/appium-youiengine-driver#settings) below
 
 | Proxied Command (iOS, Android)    |
 |-----------------------------------|
