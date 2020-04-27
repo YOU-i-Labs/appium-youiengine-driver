@@ -94,6 +94,20 @@ Support added in 5.0+
 | udid                 | `<device’s udid>`       |
 | youiEngineAppAddress | `<device’s IP address>` |
 
+#### tvOS
+Support added in 5.0+
+<sup>\*</sup> If another app is installed with You.i's socket, it may connect to it. All You.i apps should be deleted before running Appium.
+
+| Capability           | Simulator                     | Real device             |
+|----------------------|-------------------------------|-------------------------|
+| app                  | `<path to the app>`           | `<path to the app>`     |
+| automationName       | `YouiEngine`                  | `YouiEngine`            |
+| deviceName           | `<tvOS Simulator device name>` | `<device’s name>`       |
+| platformName         | `tvos`                         | `tvos`                   |
+| udid                 | `<device’s udid>`             | `<device’s udid>`       |
+| xcodeOrgId           | `<Team ID>`                   | `<Team ID>`             |
+| youiEngineAppAddress | `localhost`                   | `<device’s IP address>` |
+
 
 #### BlueSky
 Support added in 5.0+
