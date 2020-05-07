@@ -48,7 +48,8 @@ Below is a sample of the minimum required caps per platform.
 |----------------------|-------------------------|----------------------|
 | app                  | `<path to the app>`     | `<path to the app>`  |
 | automationName       | `YouiEngine`            | `YouiEngine`         |
-| deviceName           | `<device’s ID>`         | `<device’s ID>`      |
+| deviceName           | `<cannot be left blank>`| `<cannot be left blank>` |
+| udid                 | `<device’s ID>`         | `<device’s ID>`      |
 | platformName         | `Android`               | `Android`            |
 | youiEngineAppAddress<sup>1</sup> | `<device’s IP address>` | `localhost`          |
 | avd                  | `N/A`                   | `<Android Virtual Device Name>` |  
