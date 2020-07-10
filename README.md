@@ -180,6 +180,7 @@ Notes:
 | [Touch Down](http://appium.io/docs/en/commands/interactions/touch/touch-down/) | 4.2.7+ |
 | [Touch Up](http://appium.io/docs/en/commands/interactions/touch/touch-up/) | 4.2.7+	|
 | [Update Device Settings](http://appium.io/docs/en/commands/session/settings/update-settings/) | 4.4.5+	|
+| [Element Screenshot](https://webdriver.io/docs/api/element/saveScreenshot.html) | 5.18.0+	|
 
 
 <sup>1</sup> See [Mobile commands](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
