@@ -225,6 +225,7 @@ Notes:
 | Command	                 |   Description                                                             |	Argument       |	Argument Example           |
 |----------------------------|---------------------------------------------------------------------------|-----------------|-------------------------------|
 | mobile:pressButton         |   Press a physical button. The available button options can be found [here](https://github.com/YOU-i-Labs/appium-youiengine-driver/blob/master/doc/mobileCommands.md#supported-buttons) |	{name}         |	{name: "Gamepad0"}             |
+| mobile:shell               |   Execute [ADB shell](https://developer.android.com/studio/command-line/adb#shellcommands) commands (requires [insecure feature](http://appium.io/docs/en/writing-running-appium/security/index.html) `adb_shell` to be enabled) | Read this [page](http://appium.io/docs/en/writing-running-appium/android/android-shell/index.html)   |	{'command': 'echo', 'args': ['arg1', 'arg2']} |
 
 [Mobile Commands Example](http://appium.io/docs/en/commands/mobile-command/)
 
