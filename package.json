@@ -26,21 +26,20 @@
     "build/lib"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.0.0",
-    "appium-android-driver": "^4.0.0",
-    "appium-base-driver": "^4.x",
-    "appium-ios-driver": "^4.3.0",
-    "appium-ios-simulator": "3.x",
-    "appium-mac-driver": "1.x",
-    "appium-support": "2.x",
-    "appium-xcuitest-driver": "^3.0.0",
-    "asyncbox": "2.x",
-    "bluebird": "3.x",
-    "lodash": "^4.17.11",
-    "node-simctl": "^5.0.2",
-    "selenium-webdriver": "3.x",
-    "shelljs": "0.8.x",
-    "source-map-support": "^0.5.12",
+    "@babel/runtime": "^7.11.2",
+    "appium-base-driver": "^7.2.3",
+    "appium-ios-simulator": "^3.23.0",
+    "appium-mac-driver": "^1.10.0",
+    "appium-support": "^2.49.0",
+    "appium-uiautomator2-driver": "^1.57.1",
+    "appium-xcuitest-driver": "^3.27.4",
+    "asyncbox": "^2.6.0",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.20",
+    "node-simctl": "^6.3.2",
+    "selenium-webdriver": "^3.6.0",
+    "shelljs": "^0.8.4",
+    "source-map-support": "^0.5.19",
     "teen_process": "^1.15.0"
   },
   "scripts": {
@@ -51,17 +50,17 @@
     "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
   },
   "devDependencies": {
-    "ajv": "^6.10.2",
-    "appium-gulp-plugins": "^4.1.0",
-    "babel-eslint": "^10.0.2",
-    "chai": "4.x",
-    "chai-as-promised": "7.x",
-    "eslint": "^6.1.0",
-    "eslint-config-appium": "^4.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-mocha": "^6.0.0",
+    "ajv": "^6.12.4",
+    "appium-gulp-plugins": "^5.3.2",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.8.1",
+    "eslint-config-appium": "^4.5.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-mocha": "^8.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "gulp": "^4.0.2",
-    "sinon": "^7.2.3"
+    "sinon": "^9.0.3"
   }
 }
