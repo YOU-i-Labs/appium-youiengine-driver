@@ -181,6 +181,7 @@ Notes:
 | [Touch Up](http://appium.io/docs/en/commands/interactions/touch/touch-up/) | 4.2.7+	|
 | [Update Device Settings](http://appium.io/docs/en/commands/session/settings/update-settings/) | 4.4.5+	|
 | [Element Screenshot](https://webdriver.io/docs/api/element/saveScreenshot.html) | 5.18.0+	|
+| [Set Current Context](http://appium.io/docs/en/commands/context/set-context/) | any	|
 
 
 <sup>1</sup> See [Mobile commands](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
@@ -288,3 +289,19 @@ Examples (Ruby):
 | `class name`                   |
 | `accessibility id`             |
 <sup>1</sup> Starting with 5.0, `id` selector can be used to search for React Native testID.
+
+### Automating Hybrid Apps
+
+To support hybrid application automation, we added a context called `YOUI_APP` that represents the current driver
+and another context called `NATIVE_APP` which represents the driver used under the hood
+
+> Attention ❗: In case a deeper context than `NATIVE_APP` is used and then you want to continue with `YOUI_APP`,
+> make sure you switch back to `NATIVE_APP` first and only then to `YOUI_APP`
+>
+> Example: `YOUI_APP` -> `NATIVE_APP` -> `WEBVIEW_1` -> `NATIVE_APP` -> `YOUI_APP`
+
+| Platform Name  |                               Appium Driver                                         |
+|----------------|-------------------------------------------------------------------------------------|
+| `ios`, `tvos`  | [appium-xcuitest-driver](https://github.com/appium/appium-xcuitest-driver)          |
+| `android`      | [appium-uiautomator2-driver](https://github.com/appium/appium-uiautomator2-driver)  |
+| `mac`          | [appium-mac-driver](https://github.com/appium/appium-mac-driver)                    |
