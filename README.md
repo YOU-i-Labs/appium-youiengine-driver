@@ -290,9 +290,9 @@ Examples (Ruby):
 | `accessibility id`             |
 <sup>1</sup> Starting with 5.0, `id` selector can be used to search for React Native testID.
 
-### Automating Hybrid Apps
+## Hybrid Apps
 
-To support hybrid application automation, we added a context called `YOUI_APP` that represents the current driver
+To support [hybrid application](http://appium.io/docs/en/writing-running-appium/web/hybrid/index.html) automation, we added a context called `YOUI_APP` that represents the current driver
 and another context called `NATIVE_APP` which represents the driver used under the hood
 
 > Attention ❗: In case a deeper context than `NATIVE_APP` is used and then you want to continue with `YOUI_APP`,
