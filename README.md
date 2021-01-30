@@ -181,7 +181,9 @@ Notes:
 | [Touch Up](http://appium.io/docs/en/commands/interactions/touch/touch-up/) | 4.2.7+	|
 | [Update Device Settings](http://appium.io/docs/en/commands/session/settings/update-settings/) | 4.4.5+	|
 | [Element Screenshot](https://webdriver.io/docs/api/element/saveScreenshot.html) | 5.18.0+	|
-| [Set Current Context](http://appium.io/docs/en/commands/context/set-context/) | any	|
+| [Get Context](http://appium.io/docs/en/commands/context/get-context/) | any |
+| [Get All Contexts](http://appium.io/docs/en/commands/context/get-contexts/) | any |
+| [Set Current Context](http://appium.io/docs/en/commands/context/set-context/) | any |
 
 
 <sup>1</sup> See [Mobile commands](https://github.com/YOU-i-Labs/appium-youiengine-driver#selector-strategies) below
