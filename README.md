@@ -299,8 +299,6 @@ and another context called `NATIVE_APP` which represents the driver used under t
 
 > Attention ❗: In case a deeper context than `NATIVE_APP` is used and then you want to continue with `YOUI_APP`,
 > make sure you switch back to `NATIVE_APP` first and only then to `YOUI_APP`
->
-> Example: `YOUI_APP` -> `NATIVE_APP` -> `WEBVIEW_1` -> `NATIVE_APP` -> `YOUI_APP`
 
 | Platform Name  |                               Appium Driver                                         |
 |----------------|-------------------------------------------------------------------------------------|
