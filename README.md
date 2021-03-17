@@ -82,6 +82,17 @@ Support added in 5.0+
 
 <sup>1</sup> Optional.
 
+#### You.i Linux
+Support added in 5.0+
+
+| Capability           | Real device             |
+|----------------------|-------------------------|
+| app                  | `<path to the app>`     |
+| automationName       | `YouiEngine`            |
+| deviceName           | `<cannot be blank>`     |
+| platformName         | `YiLinux`               |
+| youiEngineAppAddress | `localhost`             |
+
 #### You.i tvOS
 Support added in 5.0+
 <sup>\*</sup> If another app is installed with You.i's socket, it may connect to it. All You.i apps should be deleted before running Appium.
