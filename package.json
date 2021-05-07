@@ -14,6 +14,23 @@
   "engines": [
     "node"
   ],
+  "appium": {
+    "driverName": "YouiEngine",
+    "automationName": "YouiEngine",
+    "platformNames": [
+      "ios",
+      "tvos",
+      "android",
+      "mac",
+      "yimac",
+      "yilinux",
+      "bluesky",
+      "yitvos",
+      "noproxy",
+      "connecttoapp"
+    ],
+    "mainClass": "YouiEngineDriver"
+  },
   "main": "./build/index.js",
   "bin": {},
   "directories": {
