@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
@@ -25,34 +27,53 @@ describe('driver', function () {
   describe('createSession', function () {
     beforeEach(function () {
       driver = new YouiEngineDriver();
+      sandbox.stub(driver, 'validateDesiredCaps').returns(true);
+      sandbox.stub(driver, 'executeSocketCommand');
       sandbox.stub(driver, 'connectSocket');
+      sandbox.stub(driver, 'updateSettings');
     });
     afterEach(function () {
       sandbox.restore();
     });
     it('should start an Android session if platformName is Android', async function () {
-      sandbox.stub(driver, 'setupNewAndroidDriver');
+      sandbox.stub(driver, 'startAndroidSession');
       await driver.createSession({automationName: 'YouiEngine', youiEngineAppAddress: '192.168.2.45', platformName: 'Android', deviceName: 'device', app: 'some.app.package'});
-      driver.setupNewAndroidDriver.calledOnce.should.be.true;
+      driver.startAndroidSession.calledOnce.should.be.true;
     });
     it('should start an iOS session if platformName is iOS', async function () {
-      sandbox.stub(driver, 'setupNewIOSDriver');
+      sandbox.stub(driver, 'setupNewXCUITestDriver');
       await driver.createSession({automationName: 'YouiEngine', youiEngineAppAddress: '192.168.2.45', platformName: 'iOS', deviceName: 'device', app: 'some.app.package'});
-      driver.setupNewIOSDriver.calledOnce.should.be.true;
+      driver.setupNewXCUITestDriver.calledOnce.should.be.true;
     });
     it('should delete a session on failure', async function () {
       // Force an error to make sure deleteSession gets called
-      sandbox.stub(driver, 'startIOSSession').throws();
+      sandbox.stub(driver, 'startXCUITestSession').throws();
       sandbox.stub(driver, 'deleteSession');
       try {
         await driver.createSession({automationName: 'YouiEngine', youiEngineAppAddress: '192.168.2.45', platformName: 'iOS', deviceName: 'device', app: 'some.app.package'});
       } catch (ign) {}
       driver.deleteSession.calledOnce.should.be.true;
     });
+    it('should set up maxRetryCount if specified', async function () {
+      sandbox.stub(driver, 'startAndroidSession');
+      await driver.createSession({maxRetryCount: 5, automationName: 'YouiEngine', youiEngineAppAddress: '192.168.2.45', platformName: 'Android', deviceName: 'device', app: 'some.app.package'});
+      driver.maxRetryCount.should.equal(5);
+    });
+    it('should default maxRetryCount to 3 if not specified', async function () {
+      sandbox.stub(driver, 'startAndroidSession');
+      await driver.createSession({automationName: 'YouiEngine', youiEngineAppAddress: '192.168.2.45', platformName: 'Android', deviceName: 'device', app: 'some.app.package'});
+      driver.maxRetryCount.should.equal(3);
+    });
   });
   describe('validateDesiredCaps', function () {
+    const originalExistsSync = fs.existsSync;
+
     before(function () {
-      driver = new YouiEngineDriver();
+      driver = new YouiEngineDriver({}, true);
+      fs.existsSync = sinon.stub().returns(true);
+    });
+    after(function () {
+      fs.existsSync = originalExistsSync;
     });
     // List of scenarios to test:
     // 1) iOS simulator
@@ -67,28 +88,33 @@ describe('driver', function () {
     // Applies to all scenarios
     it('should throw an error if caps do not contain automationName', function () {
       expect(() => {
-        driver.validateDesiredCaps({ platformName: 'Android', deviceName: 'device'});
-      }).to.throw(/can't be blank/);
+        driver.validateDesiredCaps({ platformName: 'Android', youiEngineAppAddress: 'localhost', deviceName: 'device', app: '/path/to/some.apk'});
+      }).to.throw('\'automationName\' can\'t be blank');
     });
     it('should throw an error if caps do not contain platformName', function () {
       expect(() => {
-        driver.validateDesiredCaps({ automationName: 'YouiEngine', deviceName: 'device'});
-      }).to.throw(/can't be blank/);
+        driver.validateDesiredCaps({ automationName: 'YouiEngine', youiEngineAppAddress: 'localhost', deviceName: 'device', app: '/path/to/some.apk'});
+      }).to.throw('\'platformName\' can\'t be blank');
     });
     it('should throw an error if caps do not contain deviceName', function () {
       expect(() => {
-        driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'Android'});
-      }).to.throw(/can't be blank/);
+        driver.validateDesiredCaps({automationName: 'YouiEngine', youiEngineAppAddress: 'localhost', platformName: 'Android', app: '/path/to/some.apk'});
+      }).to.throw('\'deviceName\' can\'t be blank');
     });
     it('should not be sensitive to platform name casing', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'YouiEngine', youiEngineAppAddress: 'localhost', platformName: 'AnDrOiD', deviceName: 'device', app: '/path/to/some.apk'});
-      }).to.not.throw(Error);
+      }).to.not.throw();
     });
     it('should not be sensitive to automationName name casing', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'youIengIne', youiEngineAppAddress: 'localhost', platformName: 'Android', deviceName: 'device', app: '/path/to/some.apk'});
-      }).to.not.throw(Error);
+      }).to.not.throw();
+    });
+    it('should throw an error if maxRetryCount is not a number', function () {
+      expect(() => {
+        driver.validateDesiredCaps({maxRetryCount: 'not-a-number', automationName: 'YouiEngine', youiEngineAppAddress: 'localhost', platformName: 'Android', deviceName: 'device', app: '/path/to/some.apk'});
+      }).to.throw('\'maxRetryCount\' must be of type number');
     });
 
     // Applies to all scenarios with proxy
@@ -107,21 +133,21 @@ describe('driver', function () {
     it('should not throw an error if caps contain "platformName == NoProxy" and do not contain youiEngineAppAddress', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'NoProxy', deviceName: 'mydevice' });
-      }).to.not.throw(Error);
+      }).to.not.throw();
     });
 
     // 1) iOS simulator
     it('should not throw an error for minimum caps of iOS simulator', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'iOS', deviceName: 'iOS Simulator', youiEngineAppAddress: 'localhost', app: '/path/to/some.app' });
-      }).to.not.throw(Error);
+      }).to.not.throw();
     });
 
     // 2) iOS real device
     it('should not throw an error for minimum caps of iOS real device', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'iOS', deviceName: 'my device', youiEngineAppAddress: '192.168.1.72', app: '/path/to/some.app', udid: '09a24b51470b059f545d7a2fc996091e06675a61' });
-      }).to.not.throw(Error);
+      }).to.not.throw();
     });
 
     // 3) Android emulator
