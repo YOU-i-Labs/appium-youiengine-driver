@@ -54,7 +54,7 @@
     "bluebird": "^3.7.2",
     "lodash": "^4.17.20",
     "node-simctl": "^6.3.2",
-    "selenium-webdriver": "^3.6.0",
+    "selenium-webdriver": "^4.1.1",
     "shelljs": "^0.8.4",
     "source-map-support": "^0.5.19",
     "teen_process": "^1.15.0"
