@@ -49,7 +49,7 @@
     "appium-mac-driver": "^1.10.0",
     "appium-support": "^2.49.0",
     "appium-uiautomator2-driver": "^1.57.1",
-    "appium-xcuitest-driver": "^3.27.4",
+    "appium-xcuitest-driver": "^4.3.7",
     "asyncbox": "^2.6.0",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.20",
