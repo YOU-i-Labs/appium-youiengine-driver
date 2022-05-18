@@ -156,16 +156,29 @@ describe('driver', function () {
         driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'NoProxy', deviceName: 'Android' });
       }).to.not.throw(/must include/);
     });
-    /*it('should not throw an error for minimum caps of Android emulator', () => {
+
+    it('should not throw an error for minimum caps of Android emulator', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'Android', deviceName: 'Android', youiEngineAppAddress: 'localhost', app: '/path/to/some.app', avd: 'Nexus' });
       }).to.not.throw(Error);
-    });*/
+    });
+
+    it('should throw an error if caps dos not contain avd for Android emulator', function () {
+      expect(() => {
+        driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'Android', deviceName: 'Android', youiEngineAppAddress: 'localhost', app: '/path/to/some.app' });
+      }).to.throw(Error);
+    });
 
     // 4) Android real device
     it('should not throw an error for minimum caps of Android real device', function () {
       expect(() => {
         driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'Android', deviceName: '83B7N14B02224534', youiEngineAppAddress: '192.168.1.72', app: '/path/to/some.app', avd: 'Nexus' });
+      }).to.not.throw(Error);
+    });
+
+    it('should not throw an error if caps dos not contain avd for Android real device', function () {
+      expect(() => {
+        driver.validateDesiredCaps({automationName: 'YouiEngine', platformName: 'Android', deviceName: 'Android', youiEngineAppAddress: '192.168.1.72', app: '/path/to/some.app' });
       }).to.not.throw(Error);
     });
 
