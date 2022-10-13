@@ -76,7 +76,7 @@
     "eslint-config-appium": "^4.5.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-mocha": "^9.0.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^6.1.0",
     "gulp": "^4.0.2",
     "sinon": "^11.1.1"
   }
