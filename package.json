@@ -48,7 +48,7 @@
     "appium-ios-simulator": "^3.23.0",
     "appium-mac-driver": "^1.10.0",
     "appium-support": "^2.49.0",
-    "appium-uiautomator2-driver": "^1.57.1",
+    "appium-uiautomator2-driver": "^2.29.2",
     "appium-xcuitest-driver": "^3.27.4",
     "asyncbox": "^2.6.0",
     "bluebird": "^3.7.2",
