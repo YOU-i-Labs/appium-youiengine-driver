@@ -45,7 +45,7 @@
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "appium-base-driver": "^7.2.3",
-    "appium-ios-simulator": "^3.23.0",
+    "appium-ios-simulator": "^5.2.0",
     "appium-mac-driver": "^1.10.0",
     "appium-support": "^2.49.0",
     "appium-uiautomator2-driver": "^1.57.1",
