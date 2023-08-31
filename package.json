@@ -57,7 +57,7 @@
     "selenium-webdriver": "^3.6.0",
     "shelljs": "^0.8.4",
     "source-map-support": "^0.5.19",
-    "teen_process": "^1.15.0"
+    "teen_process": "^2.0.12"
   },
   "scripts": {
     "prepare": "gulp prepublish",
